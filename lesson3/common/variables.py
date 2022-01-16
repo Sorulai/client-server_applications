@@ -13,3 +13,5 @@ PRESENCE = 'presence'
 RESPONSE = 'response'
 ERROR = 'error'
 RESPONDEFAULT_IP_ADDRESS = 'respondefault_ip_address'
+
+LOGGING_LEVEL = 'DEBUG'
