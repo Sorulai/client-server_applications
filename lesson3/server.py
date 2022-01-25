@@ -6,6 +6,7 @@ import logs.config_server_log
 from lesson3.common.utils import get_message, send_message
 from lesson3.common.variables import DEFAULT_PORT, MAX_CONNECTIONS, ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, \
     RESPONSE, RESPONDEFAULT_IP_ADDRESS, ERROR
+from lesson3.decorators import log
 from lesson3.errors import IncorrectDataReceivedError
 
 
@@ -16,6 +17,7 @@ class ChatServer:
         self.transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     @classmethod
+    @log
     def get_listen_port(cls):
         try:
             if '-p' in sys.argv:
@@ -38,6 +40,7 @@ class ChatServer:
             sys.exit(1)
 
     @classmethod
+    @log
     def get_listen_address(cls):
         try:
             if '-a' in sys.argv:
@@ -50,6 +53,7 @@ class ChatServer:
             sys.exit(1)
 
     @classmethod
+    @log
     def process_client_message(cls, msg):
         cls.SERVER_LOGGER.debug(f'Разбор сообщения от клиента {msg}')
         if ACTION in msg and msg[ACTION] == PRESENCE and TIME in msg and USER in msg and msg[USER][

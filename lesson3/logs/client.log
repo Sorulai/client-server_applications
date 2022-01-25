@@ -1,5 +1,11 @@
-2022-01-16 19:54:23,412 DEBUG      client.py Сформировано presence сообщение для пользователя Guest
-2022-01-16 19:54:23,412 INFO       client.py Запущен сервер, адрес  для подключений: 127.0.0.1.
-2022-01-16 19:54:23,412 INFO       client.py Запущен сервер, порт для подключений: 7777.
-2022-01-16 19:54:23,414 DEBUG      client.py Разбор сообщения от сервераp: {'response': 200}
-2022-01-16 19:54:23,414 INFO       client.py Принят ответ от сервера 200: ok
+2022-01-21 20:30:55,060 DEBUG      client.py Сформировано presence сообщение для пользователя Guest
+2022-01-21 20:30:55,061 DEBUG      decorators.py Была вызвана функция create_presence, c параметрами (<class '__main__.ChatClient'>,), {}.Вызов из модуля __main__.Вызов из функции ChatClient()
+2022-01-21 20:30:55,061 INFO       client.py Запущен сервер, адрес  для подключений: 127.0.0.1.
+2022-01-21 20:30:55,061 DEBUG      decorators.py Была вызвана функция get_server_address, c параметрами (<class '__main__.ChatClient'>,), {}.Вызов из модуля __main__.Вызов из функции my_client.main()
+2022-01-21 20:30:55,062 INFO       client.py Запущен сервер, порт для подключений: 7777.
+2022-01-21 20:30:55,062 DEBUG      decorators.py Была вызвана функция get_server_port, c параметрами (<class '__main__.ChatClient'>,), {}.Вызов из модуля __main__.Вызов из функции my_client.main()
+2022-01-21 20:30:55,062 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 64470), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1642786255.0609374, 'user': {'account_name': 'Guest'}}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции my_client.main()
+2022-01-21 20:30:55,063 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 64470), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля lesson3.common.utils.Вызов из функции my_client.main()
+2022-01-21 20:30:55,063 DEBUG      client.py Разбор сообщения от сервераp: {'response': 200}
+2022-01-21 20:30:55,063 DEBUG      decorators.py Была вызвана функция process_ans, c параметрами (<class '__main__.ChatClient'>, {'response': 200}), {}.Вызов из модуля __main__.Вызов из функции my_client.main()
+2022-01-21 20:30:55,063 INFO       client.py Принят ответ от сервера 200: ok

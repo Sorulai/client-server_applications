@@ -7,6 +7,7 @@ import logs.config_client_log
 from lesson3.common.utils import send_message, get_message
 from lesson3.common.variables import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, RESPONSE, ERROR, DEFAULT_IP_ADDRESS, \
     DEFAULT_PORT
+from lesson3.decorators import log
 from lesson3.errors import ReqFieldMissingError
 
 
@@ -18,6 +19,7 @@ class ChatClient:
         self.message_to_server = self.create_presence()
 
     @classmethod
+    @log
     def create_presence(cls, account_name='Guest'):
         out = {
             ACTION: PRESENCE,
@@ -30,6 +32,7 @@ class ChatClient:
         return out
 
     @classmethod
+    @log
     def process_ans(cls, msg):
         cls.CLIENT_LOGGER.debug(f'Разбор сообщения от сервераp: {msg}')
         if RESPONSE in msg:
@@ -39,6 +42,7 @@ class ChatClient:
         raise ReqFieldMissingError
 
     @classmethod
+    @log
     def get_server_address(cls):
         try:
             server_address = sys.argv[1]
@@ -53,6 +57,7 @@ class ChatClient:
             sys.exit(1)
 
     @classmethod
+    @log
     def get_server_port(cls):
         try:
             server_port = int(sys.argv[2])
