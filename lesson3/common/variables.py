@@ -15,3 +15,6 @@ ERROR = 'error'
 RESPONDEFAULT_IP_ADDRESS = 'respondefault_ip_address'
 
 LOGGING_LEVEL = 'DEBUG'
+MESSAGE = 'message'
+MESSAGE_TEXT = 'mess_text'
+SENDER = 'sender'
