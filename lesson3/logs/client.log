@@ -1,11 +1,58 @@
-2022-01-21 20:30:55,060 DEBUG      client.py Сформировано presence сообщение для пользователя Guest
-2022-01-21 20:30:55,061 DEBUG      decorators.py Была вызвана функция create_presence, c параметрами (<class '__main__.ChatClient'>,), {}.Вызов из модуля __main__.Вызов из функции ChatClient()
-2022-01-21 20:30:55,061 INFO       client.py Запущен сервер, адрес  для подключений: 127.0.0.1.
-2022-01-21 20:30:55,061 DEBUG      decorators.py Была вызвана функция get_server_address, c параметрами (<class '__main__.ChatClient'>,), {}.Вызов из модуля __main__.Вызов из функции my_client.main()
-2022-01-21 20:30:55,062 INFO       client.py Запущен сервер, порт для подключений: 7777.
-2022-01-21 20:30:55,062 DEBUG      decorators.py Была вызвана функция get_server_port, c параметрами (<class '__main__.ChatClient'>,), {}.Вызов из модуля __main__.Вызов из функции my_client.main()
-2022-01-21 20:30:55,062 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 64470), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1642786255.0609374, 'user': {'account_name': 'Guest'}}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции my_client.main()
-2022-01-21 20:30:55,063 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 64470), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля lesson3.common.utils.Вызов из функции my_client.main()
-2022-01-21 20:30:55,063 DEBUG      client.py Разбор сообщения от сервераp: {'response': 200}
-2022-01-21 20:30:55,063 DEBUG      decorators.py Была вызвана функция process_ans, c параметрами (<class '__main__.ChatClient'>, {'response': 200}), {}.Вызов из модуля __main__.Вызов из функции my_client.main()
-2022-01-21 20:30:55,063 INFO       client.py Принят ответ от сервера 200: ok
+2022-01-26 17:54:06,074 DEBUG      decorators.py Была вызвана функция arg_parser, c параметрами (<class '__main__.ChatClient'>,), {}.Вызов из модуля __main__.Вызов из функции my_client.main()
+2022-01-26 17:54:06,074 INFO       client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, режим работы: send
+2022-01-26 17:54:06,075 DEBUG      client.py Сформировано presence сообщение для пользователя Guest
+2022-01-26 17:54:06,075 DEBUG      decorators.py Была вызвана функция create_presence, c параметрами (<class '__main__.ChatClient'>,), {}.Вызов из модуля __main__.Вызов из функции my_client.main()
+2022-01-26 17:54:06,075 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50491), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1643208846.0752046, 'user': {'account_name': 'Guest'}}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции my_client.main()
+2022-01-26 17:54:06,080 DEBUG      decorators.py Была вызвана функция arg_parser, c параметрами (<class '__main__.ChatClient'>,), {}.Вызов из модуля __main__.Вызов из функции my_client.main()
+2022-01-26 17:54:06,081 INFO       client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, режим работы: send
+2022-01-26 17:54:06,081 DEBUG      client.py Сформировано presence сообщение для пользователя Guest
+2022-01-26 17:54:06,081 DEBUG      decorators.py Была вызвана функция create_presence, c параметрами (<class '__main__.ChatClient'>,), {}.Вызов из модуля __main__.Вызов из функции my_client.main()
+2022-01-26 17:54:06,081 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50492), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1643208846.0810626, 'user': {'account_name': 'Guest'}}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции my_client.main()
+2022-01-26 17:54:06,082 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50491), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля lesson3.common.utils.Вызов из функции my_client.main()
+2022-01-26 17:54:06,082 DEBUG      client.py Разбор сообщения от сервера: {'response': 200}
+2022-01-26 17:54:06,082 DEBUG      decorators.py Была вызвана функция process_ans, c параметрами (<class '__main__.ChatClient'>, {'response': 200}), {}.Вызов из модуля __main__.Вызов из функции my_client.main()
+2022-01-26 17:54:06,082 INFO       client.py Установлено соединение с сервером. Ответ сервера: 200: ok
+2022-01-26 17:54:06,083 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50492), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля lesson3.common.utils.Вызов из функции my_client.main()
+2022-01-26 17:54:06,083 DEBUG      client.py Разбор сообщения от сервера: {'response': 200}
+2022-01-26 17:54:06,083 DEBUG      decorators.py Была вызвана функция process_ans, c параметрами (<class '__main__.ChatClient'>, {'response': 200}), {}.Вызов из модуля __main__.Вызов из функции my_client.main()
+2022-01-26 17:54:06,083 INFO       client.py Установлено соединение с сервером. Ответ сервера: 200: ok
+2022-01-26 17:54:06,091 DEBUG      decorators.py Была вызвана функция arg_parser, c параметрами (<class '__main__.ChatClient'>,), {}.Вызов из модуля __main__.Вызов из функции my_client.main()
+2022-01-26 17:54:06,091 INFO       client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, режим работы: listen
+2022-01-26 17:54:06,091 DEBUG      client.py Сформировано presence сообщение для пользователя Guest
+2022-01-26 17:54:06,092 DEBUG      decorators.py Была вызвана функция create_presence, c параметрами (<class '__main__.ChatClient'>,), {}.Вызов из модуля __main__.Вызов из функции my_client.main()
+2022-01-26 17:54:06,092 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50493), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1643208846.0918038, 'user': {'account_name': 'Guest'}}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции my_client.main()
+2022-01-26 17:54:06,093 DEBUG      decorators.py Была вызвана функция arg_parser, c параметрами (<class '__main__.ChatClient'>,), {}.Вызов из модуля __main__.Вызов из функции my_client.main()
+2022-01-26 17:54:06,093 INFO       client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, режим работы: listen
+2022-01-26 17:54:06,093 DEBUG      client.py Сформировано presence сообщение для пользователя Guest
+2022-01-26 17:54:06,093 DEBUG      decorators.py Была вызвана функция create_presence, c параметрами (<class '__main__.ChatClient'>,), {}.Вызов из модуля __main__.Вызов из функции my_client.main()
+2022-01-26 17:54:06,094 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=364, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50494), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1643208846.093757, 'user': {'account_name': 'Guest'}}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции my_client.main()
+2022-01-26 17:54:06,094 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50493), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля lesson3.common.utils.Вызов из функции my_client.main()
+2022-01-26 17:54:06,094 DEBUG      client.py Разбор сообщения от сервера: {'response': 200}
+2022-01-26 17:54:06,094 DEBUG      decorators.py Была вызвана функция process_ans, c параметрами (<class '__main__.ChatClient'>, {'response': 200}), {}.Вызов из модуля __main__.Вызов из функции my_client.main()
+2022-01-26 17:54:06,094 INFO       client.py Установлено соединение с сервером. Ответ сервера: 200: ok
+2022-01-26 17:54:06,595 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=364, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50494), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля lesson3.common.utils.Вызов из функции my_client.main()
+2022-01-26 17:54:06,596 DEBUG      client.py Разбор сообщения от сервера: {'response': 200}
+2022-01-26 17:54:06,596 DEBUG      decorators.py Была вызвана функция process_ans, c параметрами (<class '__main__.ChatClient'>, {'response': 200}), {}.Вызов из модуля __main__.Вызов из функции my_client.main()
+2022-01-26 17:54:06,596 INFO       client.py Установлено соединение с сервером. Ответ сервера: 200: ok
+2022-01-26 17:54:13,082 DEBUG      client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1643208853.0826194, 'account_name': 'Guest', 'mess_text': 'hello'}
+2022-01-26 17:54:13,082 DEBUG      decorators.py Была вызвана функция create_msg, c параметрами (<class '__main__.ChatClient'>, <socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50492), raddr=('127.0.0.1', 7777)>), {}.Вызов из модуля __main__.Вызов из функции my_client.main()
+2022-01-26 17:54:13,083 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50492), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'time': 1643208853.0826194, 'account_name': 'Guest', 'mess_text': 'hello'}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции my_client.main()
+2022-01-26 17:54:13,102 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50493), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля lesson3.common.utils.Вызов из функции my_client.main()
+2022-01-26 17:54:13,102 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=364, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50494), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля lesson3.common.utils.Вызов из функции my_client.main()
+2022-01-26 17:54:13,102 INFO       client.py Получено сообщение от пользователя Guest:
+hello
+2022-01-26 17:54:13,103 DEBUG      decorators.py Была вызвана функция msg_from_server, c параметрами (<class '__main__.ChatClient'>, {'action': 'message', 'sender': 'Guest', 'time': 1643208853.1013753, 'mess_text': 'hello'}), {}.Вызов из модуля __main__.Вызов из функции my_client.main()
+2022-01-26 17:54:13,103 INFO       client.py Получено сообщение от пользователя Guest:
+hello
+2022-01-26 17:54:13,103 DEBUG      decorators.py Была вызвана функция msg_from_server, c параметрами (<class '__main__.ChatClient'>, {'action': 'message', 'sender': 'Guest', 'time': 1643208853.1013753, 'mess_text': 'hello'}), {}.Вызов из модуля __main__.Вызов из функции my_client.main()
+2022-01-26 17:54:19,132 DEBUG      client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1643208859.1327612, 'account_name': 'Guest', 'mess_text': 'how are you'}
+2022-01-26 17:54:19,132 DEBUG      decorators.py Была вызвана функция create_msg, c параметрами (<class '__main__.ChatClient'>, <socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50491), raddr=('127.0.0.1', 7777)>), {}.Вызов из модуля __main__.Вызов из функции my_client.main()
+2022-01-26 17:54:19,132 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50491), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'time': 1643208859.1327612, 'account_name': 'Guest', 'mess_text': 'how are you'}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции my_client.main()
+2022-01-26 17:54:19,610 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50493), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля lesson3.common.utils.Вызов из функции my_client.main()
+2022-01-26 17:54:19,610 INFO       client.py Получено сообщение от пользователя Guest:
+how are you
+2022-01-26 17:54:19,610 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=364, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50494), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля lesson3.common.utils.Вызов из функции my_client.main()
+2022-01-26 17:54:19,611 DEBUG      decorators.py Была вызвана функция msg_from_server, c параметрами (<class '__main__.ChatClient'>, {'action': 'message', 'sender': 'Guest', 'time': 1643208859.6090815, 'mess_text': 'how are you'}), {}.Вызов из модуля __main__.Вызов из функции my_client.main()
+2022-01-26 17:54:19,611 INFO       client.py Получено сообщение от пользователя Guest:
+how are you
+2022-01-26 17:54:19,611 DEBUG      decorators.py Была вызвана функция msg_from_server, c параметрами (<class '__main__.ChatClient'>, {'action': 'message', 'sender': 'Guest', 'time': 1643208859.6090815, 'mess_text': 'how are you'}), {}.Вызов из модуля __main__.Вызов из функции my_client.main()
