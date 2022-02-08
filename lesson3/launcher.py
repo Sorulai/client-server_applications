@@ -1,5 +1,5 @@
+
 import subprocess
-from subprocess import Popen
 
 P_LIST = []
 CLIENTS_COUNT = 2
@@ -13,13 +13,13 @@ while True:
 
     elif USER == 's':
         P_LIST.append(subprocess.Popen('python server.py',
-                                       creationflags=subprocess.CREATE_NEW_CONSOLE))
-        for _ in range(CLIENTS_COUNT):
-            P_LIST.append(Popen('python client.py -m send',
-                                creationflags=subprocess.CREATE_NEW_CONSOLE))
-        for _ in range(CLIENTS_COUNT):
-            P_LIST.append(Popen('python client.py -m listen',
-                                creationflags=subprocess.CREATE_NEW_CONSOLE))
+                                          creationflags=subprocess.CREATE_NEW_CONSOLE))
+        P_LIST.append(subprocess.Popen('python client.py -n test1',
+                                          creationflags=subprocess.CREATE_NEW_CONSOLE))
+        P_LIST.append(subprocess.Popen('python client.py -n test2',
+                                          creationflags=subprocess.CREATE_NEW_CONSOLE))
+        P_LIST.append(subprocess.Popen('python client.py -n test3',
+                                          creationflags=subprocess.CREATE_NEW_CONSOLE))
 
     elif USER == 'x':
         while P_LIST:
