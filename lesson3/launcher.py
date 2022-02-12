@@ -1,27 +1,17 @@
 
 import subprocess
 
-P_LIST = []
-CLIENTS_COUNT = 2
+process = []
 
 while True:
-    USER = input('Выберите действие: q - выход, '
-                 's - запустить сервер и клиенты, x - закрыть все окна: ')
-
-    if USER == 'q':
+    action = input('Выберите действие: q - выход , s - запустить сервер и клиенты, x - закрыть все окна:')
+    if action == 'q':
         break
-
-    elif USER == 's':
-        P_LIST.append(subprocess.Popen('python server.py',
-                                          creationflags=subprocess.CREATE_NEW_CONSOLE))
-        P_LIST.append(subprocess.Popen('python client.py -n test1',
-                                          creationflags=subprocess.CREATE_NEW_CONSOLE))
-        P_LIST.append(subprocess.Popen('python client.py -n test2',
-                                          creationflags=subprocess.CREATE_NEW_CONSOLE))
-        P_LIST.append(subprocess.Popen('python client.py -n test3',
-                                          creationflags=subprocess.CREATE_NEW_CONSOLE))
-
-    elif USER == 'x':
-        while P_LIST:
-            KILL_PROCESS = P_LIST.pop()
-            KILL_PROCESS.kill()
+    elif action == 's':
+        clients_count = int(input('Введите количество тестовых клиентов для запуска: '))
+        process.append(subprocess.Popen('python server.py', creationflags=subprocess.CREATE_NEW_CONSOLE))
+        for i in range(clients_count):
+            process.append(subprocess.Popen(f'python client.py -n test{i + 1}', creationflags=subprocess.CREATE_NEW_CONSOLE))
+    elif action == 'x':
+        while process:
+            process.pop().kill()
