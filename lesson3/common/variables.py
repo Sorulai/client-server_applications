@@ -8,6 +8,8 @@ ACTION = 'action'
 TIME = 'time'
 USER = 'user'
 ACCOUNT_NAME = 'account_name'
+SERVER_DATABASE = 'sqlite:///server_base.db3'
+
 
 PRESENCE = 'presence'
 RESPONSE = 'response'
