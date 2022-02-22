@@ -1,0 +1,18 @@
+2022-02-16 17:58:22,660 DEBUG      decorators.py Была вызвана функция arg_parser, c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main()
+2022-02-16 18:05:24,011 DEBUG      decorators.py Была вызвана функция arg_parser, c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main()
+2022-02-16 18:05:24,042 INFO       server.py Запущен сервер, порт для подключений: 7777, адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-16 18:05:34,298 INFO       server.py Установлено соедение с ПК ('127.0.0.1', 56676)
+2022-02-16 18:05:34,298 INFO       server.py Установлено соедение с ПК ('127.0.0.1', 56677)
+2022-02-16 18:05:34,302 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=484, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56676)>,), {}.Вызов из модуля common.utils.Вызов из функции self._bootstrap_inner()
+2022-02-16 18:05:34,302 DEBUG      server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1645023934.298321, 'user': {'account_name': 'test1'}}
+2022-02-16 18:05:34,315 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=484, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56676)>, {'response': 200}), {}.Вызов из модуля common.utils.Вызов из функции self._bootstrap_inner()
+2022-02-16 18:05:34,315 INFO       server.py Установлено соедение с ПК ('127.0.0.1', 56678)
+2022-02-16 18:05:34,316 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56677)>,), {}.Вызов из модуля common.utils.Вызов из функции self._bootstrap_inner()
+2022-02-16 18:05:34,316 DEBUG      server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1645023934.298321, 'user': {'account_name': 'test2'}}
+2022-02-16 18:05:34,324 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56677)>, {'response': 200}), {}.Вызов из модуля common.utils.Вызов из функции self._bootstrap_inner()
+2022-02-16 18:05:34,324 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=480, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56678)>,), {}.Вызов из модуля common.utils.Вызов из функции self._bootstrap_inner()
+2022-02-16 18:05:34,324 DEBUG      server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1645023934.3071094, 'user': {'account_name': 'test3'}}
+2022-02-16 18:05:34,331 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=480, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56678)>, {'response': 200}), {}.Вызов из модуля common.utils.Вызов из функции self._bootstrap_inner()
+2022-02-16 18:05:43,840 INFO       server.py Клиент ('127.0.0.1', 56678) отключился от сервера.
+2022-02-16 18:05:44,341 INFO       server.py Клиент ('127.0.0.1', 56677) отключился от сервера.
+2022-02-16 18:05:44,842 INFO       server.py Клиент ('127.0.0.1', 56676) отключился от сервера.
