@@ -1,5 +1,12 @@
-from PyQt5 import QtCore, QtGui, QtWidgets
+# -*- coding: utf-8 -*-
 
+# Form implementation generated from reading ui file 'client_dist.ui'
+#
+# Created by: PyQt5 UI code generator 5.11.3
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_MainClientWindow(object):
     def setupUi(self, MainClientWindow):
@@ -82,3 +89,4 @@ class Ui_MainClientWindow(object):
         self.menu_exit.setText(_translate("MainClientWindow", "Выход"))
         self.menu_add_contact.setText(_translate("MainClientWindow", "Добавить контакт"))
         self.menu_del_contact.setText(_translate("MainClientWindow", "Удалить контакт"))
+

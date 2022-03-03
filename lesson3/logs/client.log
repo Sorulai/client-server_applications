@@ -1,139 +1,218 @@
-2022-02-12 17:44:06,624 DEBUG      decorators.py Была вызвана функция arg_parser, c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main()
-2022-02-12 17:44:06,625 INFO       client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
-2022-02-12 17:44:06,634 DEBUG      decorators.py Была вызвана функция arg_parser, c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main()
-2022-02-12 17:44:06,635 INFO       client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
-2022-02-12 17:44:06,640 DEBUG      decorators.py Была вызвана функция arg_parser, c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main()
-2022-02-12 17:44:06,640 INFO       client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test3
-2022-02-12 17:44:07,141 DEBUG      client.py Сформировано presence сообщение для пользователя test1
-2022-02-12 17:44:07,141 DEBUG      client.py Сформировано presence сообщение для пользователя test2
-2022-02-12 17:44:07,141 DEBUG      decorators.py Была вызвана функция create_presence, c параметрами ('test1',), {}.Вызов из модуля __main__.Вызов из функции main()
-2022-02-12 17:44:07,141 DEBUG      decorators.py Была вызвана функция create_presence, c параметрами ('test2',), {}.Вызов из модуля __main__.Вызов из функции main()
-2022-02-12 17:44:07,141 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51303), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1644677047.1410675, 'user': {'account_name': 'test1'}}), {}.Вызов из модуля common.utils.Вызов из функции main()
-2022-02-12 17:44:07,142 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51304), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1644677047.1410675, 'user': {'account_name': 'test2'}}), {}.Вызов из модуля common.utils.Вызов из функции main()
-2022-02-12 17:44:07,142 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51303), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля common.utils.Вызов из функции main()
-2022-02-12 17:44:07,142 DEBUG      client.py Разбор приветственного сообщения от сервера: {'response': 200}
-2022-02-12 17:44:07,142 DEBUG      decorators.py Была вызвана функция process_response_ans, c параметрами ({'response': 200},), {}.Вызов из модуля __main__.Вызов из функции main()
-2022-02-12 17:44:07,142 INFO       client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
-2022-02-12 17:44:07,143 DEBUG      client.py Запущены процессы
-2022-02-12 17:44:07,156 DEBUG      client.py Сформировано presence сообщение для пользователя test3
-2022-02-12 17:44:07,156 DEBUG      decorators.py Была вызвана функция create_presence, c параметрами ('test3',), {}.Вызов из модуля __main__.Вызов из функции main()
-2022-02-12 17:44:07,156 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=304, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51305), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1644677047.156384, 'user': {'account_name': 'test3'}}), {}.Вызов из модуля common.utils.Вызов из функции main()
-2022-02-12 17:44:07,157 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51304), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля common.utils.Вызов из функции main()
-2022-02-12 17:44:07,157 DEBUG      client.py Разбор приветственного сообщения от сервера: {'response': 200}
-2022-02-12 17:44:07,157 DEBUG      decorators.py Была вызвана функция process_response_ans, c параметрами ({'response': 200},), {}.Вызов из модуля __main__.Вызов из функции main()
-2022-02-12 17:44:07,157 INFO       client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
-2022-02-12 17:44:07,158 DEBUG      client.py Запущены процессы
-2022-02-12 17:44:07,659 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=304, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51305), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля common.utils.Вызов из функции main()
-2022-02-12 17:44:07,660 DEBUG      client.py Разбор приветственного сообщения от сервера: {'response': 200}
-2022-02-12 17:44:07,660 DEBUG      decorators.py Была вызвана функция process_response_ans, c параметрами ({'response': 200},), {}.Вызов из модуля __main__.Вызов из функции main()
-2022-02-12 17:44:07,660 INFO       client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
-2022-02-12 17:44:07,661 DEBUG      client.py Запущены процессы
-2022-02-12 17:44:20,267 DEBUG      client.py Сформирован словарь сообщения: {'action': 'message', 'sender': 'test3', 'to': 'test2', 'time': 1644677060.2678065, 'mess_text': 'hello'}
-2022-02-12 17:44:20,268 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=304, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51305), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'sender': 'test3', 'to': 'test2', 'time': 1644677060.2678065, 'mess_text': 'hello'}), {}.Вызов из модуля common.utils.Вызов из функции self._bootstrap_inner()
-2022-02-12 17:44:20,268 INFO       client.py Отправлено сообщение для пользователя test2
-2022-02-12 17:44:20,431 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51304), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля common.utils.Вызов из функции self._bootstrap_inner()
-2022-02-12 17:44:20,431 INFO       client.py Получено сообщение от пользователя test3:
-hello
-2022-02-16 17:58:09,402 DEBUG      decorators.py Была вызвана функция arg_parser, c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main()
-2022-02-16 17:58:09,403 INFO       client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
-2022-02-16 17:58:09,403 INFO       client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
-2022-02-16 17:58:09,403 DEBUG      decorators.py Была вызвана функция arg_parser, c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main()
-2022-02-16 17:58:09,404 INFO       client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test3
-2022-02-16 17:58:11,406 CRITICAL   client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
-2022-02-16 17:58:11,407 CRITICAL   client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
-2022-02-16 18:05:34,297 DEBUG      decorators.py Была вызвана функция arg_parser, c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main()
-2022-02-16 18:05:34,297 INFO       client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
-2022-02-16 18:05:34,297 DEBUG      decorators.py Была вызвана функция arg_parser, c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main()
-2022-02-16 18:05:34,297 INFO       client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
-2022-02-16 18:05:34,298 DEBUG      client.py Сформировано presence сообщение для пользователя test1
-2022-02-16 18:05:34,298 DEBUG      client.py Сформировано presence сообщение для пользователя test2
-2022-02-16 18:05:34,298 DEBUG      decorators.py Была вызвана функция create_presence, c параметрами ('test1',), {}.Вызов из модуля __main__.Вызов из функции main()
-2022-02-16 18:05:34,298 DEBUG      decorators.py Была вызвана функция create_presence, c параметрами ('test2',), {}.Вызов из модуля __main__.Вызов из функции main()
-2022-02-16 18:05:34,298 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=136, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56676), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1645023934.298321, 'user': {'account_name': 'test1'}}), {}.Вызов из модуля common.utils.Вызов из функции main()
-2022-02-16 18:05:34,298 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56677), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1645023934.298321, 'user': {'account_name': 'test2'}}), {}.Вызов из модуля common.utils.Вызов из функции main()
-2022-02-16 18:05:34,306 DEBUG      decorators.py Была вызвана функция arg_parser, c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main()
-2022-02-16 18:05:34,306 INFO       client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test3
-2022-02-16 18:05:34,307 DEBUG      client.py Сформировано presence сообщение для пользователя test3
-2022-02-16 18:05:34,307 DEBUG      decorators.py Была вызвана функция create_presence, c параметрами ('test3',), {}.Вызов из модуля __main__.Вызов из функции main()
-2022-02-16 18:05:34,307 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56678), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1645023934.3071094, 'user': {'account_name': 'test3'}}), {}.Вызов из модуля common.utils.Вызов из функции main()
-2022-02-16 18:05:34,315 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=136, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56676), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля common.utils.Вызов из функции main()
-2022-02-16 18:05:34,315 DEBUG      client.py Разбор приветственного сообщения от сервера: {'response': 200}
-2022-02-16 18:05:34,315 DEBUG      decorators.py Была вызвана функция process_response_ans, c параметрами ({'response': 200},), {}.Вызов из модуля __main__.Вызов из функции main()
-2022-02-16 18:05:34,315 INFO       client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
-2022-02-16 18:05:34,317 DEBUG      client.py Запущены процессы
-2022-02-16 18:05:34,324 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56677), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля common.utils.Вызов из функции main()
-2022-02-16 18:05:34,324 DEBUG      client.py Разбор приветственного сообщения от сервера: {'response': 200}
-2022-02-16 18:05:34,324 DEBUG      decorators.py Была вызвана функция process_response_ans, c параметрами ({'response': 200},), {}.Вызов из модуля __main__.Вызов из функции main()
-2022-02-16 18:05:34,324 INFO       client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
-2022-02-16 18:05:34,325 DEBUG      client.py Запущены процессы
-2022-02-16 18:05:34,331 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56678), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля common.utils.Вызов из функции main()
-2022-02-16 18:05:34,332 DEBUG      client.py Разбор приветственного сообщения от сервера: {'response': 200}
-2022-02-16 18:05:34,332 DEBUG      decorators.py Была вызвана функция process_response_ans, c параметрами ({'response': 200},), {}.Вызов из модуля __main__.Вызов из функции main()
-2022-02-16 18:05:34,332 INFO       client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
-2022-02-16 18:05:34,333 DEBUG      client.py Запущены процессы
-2022-02-19 19:07:12,071 DEBUG      decorators.py Была вызвана функция arg_parser, c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main()
-2022-02-19 19:07:12,072 INFO       client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
-2022-02-19 19:07:12,072 INFO       client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
-2022-02-19 19:07:14,093 CRITICAL   client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
-2022-02-19 19:07:14,093 CRITICAL   client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
-2022-02-19 19:07:32,469 DEBUG      decorators.py Была вызвана функция arg_parser, c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main()
-2022-02-19 19:07:32,470 INFO       client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
-2022-02-19 19:07:32,470 DEBUG      decorators.py Была вызвана функция arg_parser, c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main()
-2022-02-19 19:07:32,470 INFO       client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
-2022-02-19 19:07:34,491 CRITICAL   client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
-2022-02-19 19:44:51,077 DEBUG      decorators.py Была вызвана функция arg_parser, c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main()
-2022-02-22 19:17:11,553 DEBUG      decorators.py Была вызвана функция arg_parser, c параметрами (), {}.Вызов из модуля __main__.Вызов из функции arg_parser()
-2022-02-22 19:17:18,093 INFO       client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kiara
-2022-02-22 19:17:18,117 INFO       transport.py Попытка подключения №1
-2022-02-22 19:17:18,118 DEBUG      transport.py Установлено соединение с сервером
-2022-02-22 19:17:18,118 DEBUG      transport.py Сформировано presence сообщение для пользователя kiara
-2022-02-22 19:17:18,118 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=1272, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56047), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1645546638.1185641, 'user': {'account_name': 'kiara'}}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_name)
-2022-02-22 19:17:23,131 CRITICAL   transport.py Потеряно соединение с сервером!
-2022-02-22 19:18:09,596 DEBUG      decorators.py Была вызвана функция arg_parser, c параметрами (), {}.Вызов из модуля __main__.Вызов из функции arg_parser()
-2022-02-22 19:18:14,961 INFO       client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: jahe
-2022-02-22 19:18:14,987 INFO       transport.py Попытка подключения №1
-2022-02-22 19:18:14,987 DEBUG      transport.py Установлено соединение с сервером
-2022-02-22 19:18:14,987 DEBUG      transport.py Сформировано presence сообщение для пользователя jahe
-2022-02-22 19:18:14,988 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=1292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56052), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1645546694.9871514, 'user': {'account_name': 'jahe'}}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_name)
-2022-02-22 19:18:14,999 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=1292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56052), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_name)
-2022-02-22 19:18:14,999 DEBUG      transport.py Разбор сообщения от сервера: {'response': 200}
-2022-02-22 19:18:15,000 INFO       transport.py Соединение с сервером успешно установлено.
-2022-02-22 19:18:15,000 DEBUG      transport.py Запрос списка известных пользователей jahe
-2022-02-22 19:18:15,000 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=1292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56052), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1645546695.0007045, 'account_name': 'jahe'}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_name)
-2022-02-22 19:18:15,504 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=1292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56052), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_name)
-2022-02-22 19:18:15,509 DEBUG      transport.py Запрос контакт листа для пользователя Thread-1
-2022-02-22 19:18:15,509 DEBUG      transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1645546695.5096338, 'user': 'jahe'}
-2022-02-22 19:18:15,510 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=1292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56052), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1645546695.5096338, 'user': 'jahe'}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_name)
-2022-02-22 19:18:16,008 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=1292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56052), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_name)
-2022-02-22 19:18:16,009 DEBUG      transport.py Получен ответ {'response': 202, 'data_list': []}
-2022-02-22 19:18:16,009 DEBUG      transport.py Запущен процесс - приёмник сообщений с сервера.
-2022-02-22 19:18:44,170 DEBUG      transport.py Создание контакта test1
-2022-02-22 19:18:44,170 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=1292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56052), raddr=('127.0.0.1', 7777)>, {'action': 'add', 'time': 1645546724.1703818, 'user': 'jahe', 'account_name': 'test1'}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_app.exec_()
-2022-02-22 19:18:44,391 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=1292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56052), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_app.exec_()
-2022-02-22 19:18:44,391 DEBUG      transport.py Разбор сообщения от сервера: {'response': 200}
-2022-02-22 19:18:50,338 DEBUG      transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'jahe', 'to': 'test1', 'time': 1645546730.3381298, 'mess_text': 'Ghbdrtn'}
-2022-02-22 19:18:50,339 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=1292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56052), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'jahe', 'to': 'test1', 'time': 1645546730.3381298, 'mess_text': 'Ghbdrtn'}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_app.exec_()
-2022-02-22 19:18:50,522 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=1292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56052), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_app.exec_()
-2022-02-22 19:18:50,522 DEBUG      transport.py Разбор сообщения от сервера: {'response': 400, 'error': 'Пользователь не зарегистрирован на сервере.'}
-2022-02-22 19:19:38,034 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=1292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56052), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1645546777.8128731, 'account_name': 'jahe'}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции transport.transport_shutdown()
-2022-02-22 19:19:38,034 DEBUG      transport.py Транспорт завершает работу.
-2022-02-22 19:20:12,866 DEBUG      decorators.py Была вызвана функция arg_parser, c параметрами (), {}.Вызов из модуля __main__.Вызов из функции arg_parser()
-2022-02-22 19:20:16,372 INFO       client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: Jane
-2022-02-22 19:20:16,398 INFO       transport.py Попытка подключения №1
-2022-02-22 19:20:16,398 DEBUG      transport.py Установлено соединение с сервером
-2022-02-22 19:20:16,398 DEBUG      transport.py Сформировано presence сообщение для пользователя Jane
-2022-02-22 19:20:16,399 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=1288, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56071), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1645546816.398756, 'user': {'account_name': 'Jane'}}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_name)
-2022-02-22 19:20:16,411 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=1288, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56071), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_name)
-2022-02-22 19:20:16,411 DEBUG      transport.py Разбор сообщения от сервера: {'response': 200}
-2022-02-22 19:20:16,411 INFO       transport.py Соединение с сервером успешно установлено.
-2022-02-22 19:20:16,411 DEBUG      transport.py Запрос списка известных пользователей Jane
-2022-02-22 19:20:16,411 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=1288, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56071), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1645546816.411906, 'account_name': 'Jane'}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_name)
-2022-02-22 19:20:16,924 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=1288, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56071), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_name)
-2022-02-22 19:20:16,928 DEBUG      transport.py Запрос контакт листа для пользователя Thread-1
-2022-02-22 19:20:16,928 DEBUG      transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1645546816.928344, 'user': 'Jane'}
-2022-02-22 19:20:16,928 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=1288, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56071), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1645546816.928344, 'user': 'Jane'}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_name)
-2022-02-22 19:20:17,427 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=1288, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56071), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_name)
-2022-02-22 19:20:17,427 DEBUG      transport.py Получен ответ {'response': 202, 'data_list': []}
-2022-02-22 19:20:17,427 DEBUG      transport.py Запущен процесс - приёмник сообщений с сервера.
-2022-02-22 19:21:21,107 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=1288, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56071), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1645546880.7503653, 'account_name': 'Jane'}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции transport.transport_shutdown()
-2022-02-22 19:21:21,107 DEBUG      transport.py Транспорт завершает работу.
+2022-03-04 02:21:03,612 DEBUG client.py Args loaded
+2022-03-04 02:21:03,612 DEBUG client.py Args loaded
+2022-03-04 02:21:09,835 DEBUG client.py Using USERNAME = Julia, PASSWD = 123456.
+2022-03-04 02:21:09,835 DEBUG client.py Using USERNAME = Julia, PASSWD = 123456.
+2022-03-04 02:21:09,835 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: Julia
+2022-03-04 02:21:09,835 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: Julia
+2022-03-04 02:21:10,031 DEBUG client.py Keys successfully loaded.
+2022-03-04 02:21:10,031 DEBUG client.py Keys successfully loaded.
+2022-03-04 02:21:10,772 INFO transport.py Попытка подключения №1
+2022-03-04 02:21:10,772 INFO transport.py Попытка подключения №1
+2022-03-04 02:21:10,773 DEBUG transport.py Connection established.
+2022-03-04 02:21:10,773 DEBUG transport.py Connection established.
+2022-03-04 02:21:10,773 DEBUG transport.py Starting auth dialog.
+2022-03-04 02:21:10,773 DEBUG transport.py Starting auth dialog.
+2022-03-04 02:21:10,780 DEBUG transport.py Passwd hash ready: b'cd19da8047307a6c6065ad70a568d31baa4212242c1a40fe583a91ee8e4becbaf1186dc5e416ef2034aba70c4eaf38db80248abe13264e35c58e5bbbb9361125'
+2022-03-04 02:21:10,780 DEBUG transport.py Passwd hash ready: b'cd19da8047307a6c6065ad70a568d31baa4212242c1a40fe583a91ee8e4becbaf1186dc5e416ef2034aba70c4eaf38db80248abe13264e35c58e5bbbb9361125'
+2022-03-04 02:21:10,781 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1646349670.7818532, 'user': {'account_name': 'Julia', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqYNL/w1twC1e3HpBF1Q3\nKCecuyeb/8mLfJCUk+wpFH/o2r9SKyfvlxqYkQGfqIsQVz4+fwE+vAgPs5vC+1GK\niPu1mKCuj0V7SimRa19xH0i8GF2N1jazFOR9XX7Anp7m8XM+pmnoSOxRlMddsUIv\nZDeCRGJpzf11btWGmcxkTJ0gI3FUvsV9INWT9uZ+1jKccRci2HxaAXqN5rl2d0UY\nHGtLVHtt7jpRZOYE3ztUx9mIcFDv83a72m5RZLBxzdAvYKMkafIfuBjZ1djd4b3C\nj0to1glXLcwlZqs8u50uM4hVFb7R+pFpO50CAVozdxOSNu5ItZZ7KCp5h19FENV9\nxwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-04 02:21:10,781 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1646349670.7818532, 'user': {'account_name': 'Julia', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqYNL/w1twC1e3HpBF1Q3\nKCecuyeb/8mLfJCUk+wpFH/o2r9SKyfvlxqYkQGfqIsQVz4+fwE+vAgPs5vC+1GK\niPu1mKCuj0V7SimRa19xH0i8GF2N1jazFOR9XX7Anp7m8XM+pmnoSOxRlMddsUIv\nZDeCRGJpzf11btWGmcxkTJ0gI3FUvsV9INWT9uZ+1jKccRci2HxaAXqN5rl2d0UY\nHGtLVHtt7jpRZOYE3ztUx9mIcFDv83a72m5RZLBxzdAvYKMkafIfuBjZ1djd4b3C\nj0to1glXLcwlZqs8u50uM4hVFb7R+pFpO50CAVozdxOSNu5ItZZ7KCp5h19FENV9\nxwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-04 02:21:11,281 DEBUG transport.py Server response = {'response': 400, 'error': 'Пользователь не зарегистрирован.'}.
+2022-03-04 02:21:11,281 DEBUG transport.py Server response = {'response': 400, 'error': 'Пользователь не зарегистрирован.'}.
+2022-03-04 02:22:37,411 DEBUG client.py Args loaded
+2022-03-04 02:22:37,411 DEBUG client.py Args loaded
+2022-03-04 02:22:44,364 DEBUG client.py Using USERNAME = Julia, PASSWD = 12345667.
+2022-03-04 02:22:44,364 DEBUG client.py Using USERNAME = Julia, PASSWD = 12345667.
+2022-03-04 02:22:44,364 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: Julia
+2022-03-04 02:22:44,364 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: Julia
+2022-03-04 02:22:44,412 DEBUG client.py Keys successfully loaded.
+2022-03-04 02:22:44,412 DEBUG client.py Keys successfully loaded.
+2022-03-04 02:22:44,427 INFO transport.py Попытка подключения №1
+2022-03-04 02:22:44,427 INFO transport.py Попытка подключения №1
+2022-03-04 02:22:44,438 DEBUG transport.py Connection established.
+2022-03-04 02:22:44,438 DEBUG transport.py Connection established.
+2022-03-04 02:22:44,438 DEBUG transport.py Starting auth dialog.
+2022-03-04 02:22:44,438 DEBUG transport.py Starting auth dialog.
+2022-03-04 02:22:44,445 DEBUG transport.py Passwd hash ready: b'67089a3222af1a3a9d19963924e2da6e0dd31e10b96af3b571cdfc4d2ef9bd142bbdceaa99a4830f202771e692be005a1943b395c977c9d36e37cc168f2d0cf5'
+2022-03-04 02:22:44,445 DEBUG transport.py Passwd hash ready: b'67089a3222af1a3a9d19963924e2da6e0dd31e10b96af3b571cdfc4d2ef9bd142bbdceaa99a4830f202771e692be005a1943b395c977c9d36e37cc168f2d0cf5'
+2022-03-04 02:22:44,446 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1646349764.445699, 'user': {'account_name': 'Julia', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqYNL/w1twC1e3HpBF1Q3\nKCecuyeb/8mLfJCUk+wpFH/o2r9SKyfvlxqYkQGfqIsQVz4+fwE+vAgPs5vC+1GK\niPu1mKCuj0V7SimRa19xH0i8GF2N1jazFOR9XX7Anp7m8XM+pmnoSOxRlMddsUIv\nZDeCRGJpzf11btWGmcxkTJ0gI3FUvsV9INWT9uZ+1jKccRci2HxaAXqN5rl2d0UY\nHGtLVHtt7jpRZOYE3ztUx9mIcFDv83a72m5RZLBxzdAvYKMkafIfuBjZ1djd4b3C\nj0to1glXLcwlZqs8u50uM4hVFb7R+pFpO50CAVozdxOSNu5ItZZ7KCp5h19FENV9\nxwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-04 02:22:44,446 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1646349764.445699, 'user': {'account_name': 'Julia', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqYNL/w1twC1e3HpBF1Q3\nKCecuyeb/8mLfJCUk+wpFH/o2r9SKyfvlxqYkQGfqIsQVz4+fwE+vAgPs5vC+1GK\niPu1mKCuj0V7SimRa19xH0i8GF2N1jazFOR9XX7Anp7m8XM+pmnoSOxRlMddsUIv\nZDeCRGJpzf11btWGmcxkTJ0gI3FUvsV9INWT9uZ+1jKccRci2HxaAXqN5rl2d0UY\nHGtLVHtt7jpRZOYE3ztUx9mIcFDv83a72m5RZLBxzdAvYKMkafIfuBjZ1djd4b3C\nj0to1glXLcwlZqs8u50uM4hVFb7R+pFpO50CAVozdxOSNu5ItZZ7KCp5h19FENV9\nxwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-04 02:22:44,938 DEBUG transport.py Server response = {'response': 511, 'bin': '9d43bc6f9eb90bf2d18a27eb4976b2a72b6b7d8e0e1b02e890b99a7538ea23c996d1eb1301228e1811e12fa09427c4eb179eb7bf49c9f2d762e67b1790fab1dc'}.
+2022-03-04 02:22:44,938 DEBUG transport.py Server response = {'response': 511, 'bin': '9d43bc6f9eb90bf2d18a27eb4976b2a72b6b7d8e0e1b02e890b99a7538ea23c996d1eb1301228e1811e12fa09427c4eb179eb7bf49c9f2d762e67b1790fab1dc'}.
+2022-03-04 02:22:44,939 DEBUG transport.py Разбор сообщения от сервера: {'response': 400, 'error': 'Неверный пароль.'}
+2022-03-04 02:22:44,939 DEBUG transport.py Разбор сообщения от сервера: {'response': 400, 'error': 'Неверный пароль.'}
+2022-03-04 02:23:12,437 DEBUG client.py Args loaded
+2022-03-04 02:23:12,437 DEBUG client.py Args loaded
+2022-03-04 02:23:18,085 DEBUG client.py Using USERNAME = Julia, PASSWD = 1234567.
+2022-03-04 02:23:18,085 DEBUG client.py Using USERNAME = Julia, PASSWD = 1234567.
+2022-03-04 02:23:18,086 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: Julia
+2022-03-04 02:23:18,086 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: Julia
+2022-03-04 02:23:18,137 DEBUG client.py Keys successfully loaded.
+2022-03-04 02:23:18,137 DEBUG client.py Keys successfully loaded.
+2022-03-04 02:23:18,153 INFO transport.py Попытка подключения №1
+2022-03-04 02:23:18,153 INFO transport.py Попытка подключения №1
+2022-03-04 02:23:18,154 DEBUG transport.py Connection established.
+2022-03-04 02:23:18,154 DEBUG transport.py Connection established.
+2022-03-04 02:23:18,154 DEBUG transport.py Starting auth dialog.
+2022-03-04 02:23:18,154 DEBUG transport.py Starting auth dialog.
+2022-03-04 02:23:18,161 DEBUG transport.py Passwd hash ready: b'6e291a75ddd6bf8b9af8bc8160b400c3880c445a74f1356b76d2724de2770015ddf3d14f188a13a0b0e1140319108be16fc9aa57ae17a0b3d3e8949072f700b5'
+2022-03-04 02:23:18,161 DEBUG transport.py Passwd hash ready: b'6e291a75ddd6bf8b9af8bc8160b400c3880c445a74f1356b76d2724de2770015ddf3d14f188a13a0b0e1140319108be16fc9aa57ae17a0b3d3e8949072f700b5'
+2022-03-04 02:23:18,161 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1646349798.161452, 'user': {'account_name': 'Julia', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqYNL/w1twC1e3HpBF1Q3\nKCecuyeb/8mLfJCUk+wpFH/o2r9SKyfvlxqYkQGfqIsQVz4+fwE+vAgPs5vC+1GK\niPu1mKCuj0V7SimRa19xH0i8GF2N1jazFOR9XX7Anp7m8XM+pmnoSOxRlMddsUIv\nZDeCRGJpzf11btWGmcxkTJ0gI3FUvsV9INWT9uZ+1jKccRci2HxaAXqN5rl2d0UY\nHGtLVHtt7jpRZOYE3ztUx9mIcFDv83a72m5RZLBxzdAvYKMkafIfuBjZ1djd4b3C\nj0to1glXLcwlZqs8u50uM4hVFb7R+pFpO50CAVozdxOSNu5ItZZ7KCp5h19FENV9\nxwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-04 02:23:18,161 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1646349798.161452, 'user': {'account_name': 'Julia', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqYNL/w1twC1e3HpBF1Q3\nKCecuyeb/8mLfJCUk+wpFH/o2r9SKyfvlxqYkQGfqIsQVz4+fwE+vAgPs5vC+1GK\niPu1mKCuj0V7SimRa19xH0i8GF2N1jazFOR9XX7Anp7m8XM+pmnoSOxRlMddsUIv\nZDeCRGJpzf11btWGmcxkTJ0gI3FUvsV9INWT9uZ+1jKccRci2HxaAXqN5rl2d0UY\nHGtLVHtt7jpRZOYE3ztUx9mIcFDv83a72m5RZLBxzdAvYKMkafIfuBjZ1djd4b3C\nj0to1glXLcwlZqs8u50uM4hVFb7R+pFpO50CAVozdxOSNu5ItZZ7KCp5h19FENV9\nxwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-04 02:23:18,669 DEBUG transport.py Server response = {'response': 511, 'bin': 'ca3b1b7dfe3a9890e07bc85c6786f50cb86eac6fbd55fd933b7a34ca218fa320332478570feb337cc08144a1bc7fdf77082c6db25d3fa2e7ef1640eaf6e29f62'}.
+2022-03-04 02:23:18,669 DEBUG transport.py Server response = {'response': 511, 'bin': 'ca3b1b7dfe3a9890e07bc85c6786f50cb86eac6fbd55fd933b7a34ca218fa320332478570feb337cc08144a1bc7fdf77082c6db25d3fa2e7ef1640eaf6e29f62'}.
+2022-03-04 02:23:18,670 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-04 02:23:18,670 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-04 02:23:18,670 DEBUG transport.py Запрос списка известных пользователей Julia
+2022-03-04 02:23:18,670 DEBUG transport.py Запрос списка известных пользователей Julia
+2022-03-04 02:23:19,195 DEBUG transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-04 02:23:19,195 DEBUG transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-04 02:23:19,195 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1646349799.1954486, 'user': 'Julia'}
+2022-03-04 02:23:19,195 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1646349799.1954486, 'user': 'Julia'}
+2022-03-04 02:23:19,704 DEBUG transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-04 02:23:19,704 DEBUG transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-04 02:23:19,704 DEBUG client.py Transport ready.
+2022-03-04 02:23:19,704 DEBUG client.py Transport ready.
+2022-03-04 02:23:19,704 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-04 02:23:19,704 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-04 02:23:38,230 DEBUG transport.py Запрос списка известных пользователей Julia
+2022-03-04 02:23:38,230 DEBUG transport.py Запрос списка известных пользователей Julia
+2022-03-04 02:23:38,428 DEBUG add_contact.py Обновление списка пользователей с сервера выполнено
+2022-03-04 02:23:38,428 DEBUG add_contact.py Обновление списка пользователей с сервера выполнено
+2022-03-04 02:23:47,002 DEBUG transport.py Транспорт завершает работу.
+2022-03-04 02:23:47,002 DEBUG transport.py Транспорт завершает работу.
+2022-03-04 02:23:47,978 DEBUG transport.py Потеряно соединение с сервером.
+2022-03-04 02:23:47,978 DEBUG transport.py Потеряно соединение с сервером.
+2022-03-04 02:25:21,540 DEBUG client.py Args loaded
+2022-03-04 02:25:21,540 DEBUG client.py Args loaded
+2022-03-04 02:25:28,458 DEBUG client.py Using USERNAME = Julia, PASSWD = 1234567.
+2022-03-04 02:25:28,458 DEBUG client.py Using USERNAME = Julia, PASSWD = 1234567.
+2022-03-04 02:25:28,458 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: Julia
+2022-03-04 02:25:28,458 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: Julia
+2022-03-04 02:25:28,534 DEBUG client.py Keys successfully loaded.
+2022-03-04 02:25:28,534 DEBUG client.py Keys successfully loaded.
+2022-03-04 02:25:28,553 INFO transport.py Попытка подключения №1
+2022-03-04 02:25:28,553 INFO transport.py Попытка подключения №1
+2022-03-04 02:25:28,564 DEBUG transport.py Connection established.
+2022-03-04 02:25:28,564 DEBUG transport.py Connection established.
+2022-03-04 02:25:28,564 DEBUG transport.py Starting auth dialog.
+2022-03-04 02:25:28,564 DEBUG transport.py Starting auth dialog.
+2022-03-04 02:25:28,571 DEBUG transport.py Passwd hash ready: b'6e291a75ddd6bf8b9af8bc8160b400c3880c445a74f1356b76d2724de2770015ddf3d14f188a13a0b0e1140319108be16fc9aa57ae17a0b3d3e8949072f700b5'
+2022-03-04 02:25:28,571 DEBUG transport.py Passwd hash ready: b'6e291a75ddd6bf8b9af8bc8160b400c3880c445a74f1356b76d2724de2770015ddf3d14f188a13a0b0e1140319108be16fc9aa57ae17a0b3d3e8949072f700b5'
+2022-03-04 02:25:28,571 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1646349928.5719206, 'user': {'account_name': 'Julia', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqYNL/w1twC1e3HpBF1Q3\nKCecuyeb/8mLfJCUk+wpFH/o2r9SKyfvlxqYkQGfqIsQVz4+fwE+vAgPs5vC+1GK\niPu1mKCuj0V7SimRa19xH0i8GF2N1jazFOR9XX7Anp7m8XM+pmnoSOxRlMddsUIv\nZDeCRGJpzf11btWGmcxkTJ0gI3FUvsV9INWT9uZ+1jKccRci2HxaAXqN5rl2d0UY\nHGtLVHtt7jpRZOYE3ztUx9mIcFDv83a72m5RZLBxzdAvYKMkafIfuBjZ1djd4b3C\nj0to1glXLcwlZqs8u50uM4hVFb7R+pFpO50CAVozdxOSNu5ItZZ7KCp5h19FENV9\nxwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-04 02:25:28,571 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1646349928.5719206, 'user': {'account_name': 'Julia', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqYNL/w1twC1e3HpBF1Q3\nKCecuyeb/8mLfJCUk+wpFH/o2r9SKyfvlxqYkQGfqIsQVz4+fwE+vAgPs5vC+1GK\niPu1mKCuj0V7SimRa19xH0i8GF2N1jazFOR9XX7Anp7m8XM+pmnoSOxRlMddsUIv\nZDeCRGJpzf11btWGmcxkTJ0gI3FUvsV9INWT9uZ+1jKccRci2HxaAXqN5rl2d0UY\nHGtLVHtt7jpRZOYE3ztUx9mIcFDv83a72m5RZLBxzdAvYKMkafIfuBjZ1djd4b3C\nj0to1glXLcwlZqs8u50uM4hVFb7R+pFpO50CAVozdxOSNu5ItZZ7KCp5h19FENV9\nxwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-04 02:25:29,072 DEBUG transport.py Server response = {'response': 511, 'bin': '15f373d32665aa74a490f7e45564f0f5410797c915e9f6595d245e670bd6b325d75b1d5f84f75063cf8c955a4af212a66f2a76c6ca134c9bb9db7750dccfe117'}.
+2022-03-04 02:25:29,072 DEBUG transport.py Server response = {'response': 511, 'bin': '15f373d32665aa74a490f7e45564f0f5410797c915e9f6595d245e670bd6b325d75b1d5f84f75063cf8c955a4af212a66f2a76c6ca134c9bb9db7750dccfe117'}.
+2022-03-04 02:25:29,073 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-04 02:25:29,073 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-04 02:25:29,073 DEBUG transport.py Запрос списка известных пользователей Julia
+2022-03-04 02:25:29,073 DEBUG transport.py Запрос списка известных пользователей Julia
+2022-03-04 02:25:29,595 DEBUG transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-04 02:25:29,595 DEBUG transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-04 02:25:29,595 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1646349929.5951314, 'user': 'Julia'}
+2022-03-04 02:25:29,595 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1646349929.5951314, 'user': 'Julia'}
+2022-03-04 02:25:30,089 DEBUG transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-04 02:25:30,089 DEBUG transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-04 02:25:30,090 DEBUG client.py Transport ready.
+2022-03-04 02:25:30,090 DEBUG client.py Transport ready.
+2022-03-04 02:25:30,091 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-04 02:25:30,091 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-04 02:25:46,262 DEBUG transport.py Принято сообщение с сервера: {'response': 205}
+2022-03-04 02:25:46,262 DEBUG transport.py Принято сообщение с сервера: {'response': 205}
+2022-03-04 02:25:46,262 DEBUG transport.py Разбор сообщения от сервера: {'response': 205}
+2022-03-04 02:25:46,262 DEBUG transport.py Разбор сообщения от сервера: {'response': 205}
+2022-03-04 02:25:46,262 DEBUG transport.py Запрос списка известных пользователей Julia
+2022-03-04 02:25:46,262 DEBUG transport.py Запрос списка известных пользователей Julia
+2022-03-04 02:25:46,677 DEBUG transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-04 02:25:46,677 DEBUG transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-04 02:25:46,677 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1646349946.6772466, 'user': 'Julia'}
+2022-03-04 02:25:46,677 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1646349946.6772466, 'user': 'Julia'}
+2022-03-04 02:25:47,186 DEBUG transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-04 02:25:47,186 DEBUG transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-04 02:27:21,093 DEBUG client.py Args loaded
+2022-03-04 02:27:21,093 DEBUG client.py Args loaded
+2022-03-04 02:27:35,039 DEBUG client.py Using USERNAME = Kate, PASSWD = 1234567.
+2022-03-04 02:27:35,039 DEBUG client.py Using USERNAME = Kate, PASSWD = 1234567.
+2022-03-04 02:27:35,039 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: Kate
+2022-03-04 02:27:35,039 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: Kate
+2022-03-04 02:27:35,792 DEBUG client.py Keys successfully loaded.
+2022-03-04 02:27:35,792 DEBUG client.py Keys successfully loaded.
+2022-03-04 02:27:35,815 INFO transport.py Попытка подключения №1
+2022-03-04 02:27:35,815 INFO transport.py Попытка подключения №1
+2022-03-04 02:27:35,816 DEBUG transport.py Connection established.
+2022-03-04 02:27:35,816 DEBUG transport.py Connection established.
+2022-03-04 02:27:35,816 DEBUG transport.py Starting auth dialog.
+2022-03-04 02:27:35,816 DEBUG transport.py Starting auth dialog.
+2022-03-04 02:27:35,823 DEBUG transport.py Passwd hash ready: b'a43f9b3e5a064b6bb6ad862ab4ab0d5d90a82c549c352e155aa4f665f2e1847c1f68c5a9bfe24073f9098e7975e5b2eda0d3f3143f9fe528d9e5dbefc5c93818'
+2022-03-04 02:27:35,823 DEBUG transport.py Passwd hash ready: b'a43f9b3e5a064b6bb6ad862ab4ab0d5d90a82c549c352e155aa4f665f2e1847c1f68c5a9bfe24073f9098e7975e5b2eda0d3f3143f9fe528d9e5dbefc5c93818'
+2022-03-04 02:27:35,823 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1646350055.8234298, 'user': {'account_name': 'Kate', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0vyAya94rx1kjX9+DLDR\nialdN2GIxO0AOgvvJ5UpmQs+lvuyHf7r3D1ikcPizbU2d3Y1B0+0r83VDFy3dLB+\nwV64l1EpQAnEA0uX1eSzBmH4RDtGHvcI6966X+hDFEo5PwymQTtAY227JcHu4tKs\njrkx4MleIhzp0z4Vn9IWyfo2s39K+efS6yph0PClpgcHm4/WWR8nUngm0aAyPlb+\nracdWB8XW+r+bXBod0YLJlZDIpZ9TP5M2IcG4EsIBK8FYjQwtSm3YfuvVOJZkgGd\nAMKWpJX6cKl7mduD75Zd2ChOnhoSlcVGTfJjE3Zvo7Sb8Z6tGNTKTperqbwnSE3u\nfwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-04 02:27:35,823 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1646350055.8234298, 'user': {'account_name': 'Kate', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0vyAya94rx1kjX9+DLDR\nialdN2GIxO0AOgvvJ5UpmQs+lvuyHf7r3D1ikcPizbU2d3Y1B0+0r83VDFy3dLB+\nwV64l1EpQAnEA0uX1eSzBmH4RDtGHvcI6966X+hDFEo5PwymQTtAY227JcHu4tKs\njrkx4MleIhzp0z4Vn9IWyfo2s39K+efS6yph0PClpgcHm4/WWR8nUngm0aAyPlb+\nracdWB8XW+r+bXBod0YLJlZDIpZ9TP5M2IcG4EsIBK8FYjQwtSm3YfuvVOJZkgGd\nAMKWpJX6cKl7mduD75Zd2ChOnhoSlcVGTfJjE3Zvo7Sb8Z6tGNTKTperqbwnSE3u\nfwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-04 02:27:36,325 DEBUG transport.py Server response = {'response': 511, 'bin': 'e148950c1e0167adb6854e008d6d7529a7ef6947f82f4540057d4275b580e30fe8317c7d2461f750b6ed0f8e69fca8ce7e33a331af7ede9662687aacf41c304d'}.
+2022-03-04 02:27:36,325 DEBUG transport.py Server response = {'response': 511, 'bin': 'e148950c1e0167adb6854e008d6d7529a7ef6947f82f4540057d4275b580e30fe8317c7d2461f750b6ed0f8e69fca8ce7e33a331af7ede9662687aacf41c304d'}.
+2022-03-04 02:27:36,325 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-04 02:27:36,325 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-04 02:27:36,325 DEBUG transport.py Запрос списка известных пользователей Kate
+2022-03-04 02:27:36,325 DEBUG transport.py Запрос списка известных пользователей Kate
+2022-03-04 02:27:36,847 DEBUG transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-04 02:27:36,847 DEBUG transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-04 02:27:36,847 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1646350056.8477407, 'user': 'Kate'}
+2022-03-04 02:27:36,847 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1646350056.8477407, 'user': 'Kate'}
+2022-03-04 02:27:37,343 DEBUG transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-04 02:27:37,343 DEBUG transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-04 02:27:37,344 DEBUG client.py Transport ready.
+2022-03-04 02:27:37,344 DEBUG client.py Transport ready.
+2022-03-04 02:27:37,344 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-04 02:27:37,344 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-04 02:27:41,487 DEBUG transport.py Создание контакта Julia
+2022-03-04 02:27:41,487 DEBUG transport.py Создание контакта Julia
+2022-03-04 02:27:41,903 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-04 02:27:41,903 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-04 02:27:41,908 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x0000013ADD949C10>
+2022-03-04 02:27:41,908 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x0000013ADD949C10>
+2022-03-04 02:27:50,239 DEBUG transport.py Запрос публичного ключа для Julia
+2022-03-04 02:27:50,239 DEBUG transport.py Запрос публичного ключа для Julia
+2022-03-04 02:27:50,526 DEBUG main_window.py Загружен открытый ключ для Julia
+2022-03-04 02:27:50,526 DEBUG main_window.py Загружен открытый ключ для Julia
+2022-03-04 02:27:57,313 DEBUG transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'Kate', 'to': 'Julia', 'time': 1646350077.313939, 'mess_text': 'Pa1wzmqUopid6i3ahlZkU9NmbITgO8UzjiRcDCivttQFzRJ46Z82G8xgCDIPzYyJwL/dlhuSDnA+RIqvg8wn+kIP+CwhCQxlKz17NbFC2d5UE2cfJuZyUc0DaUlPdJorwMdFiNAtkV+RD86OZ/dXR8Y6+Oz9B6Aa2i76rFaaDlH15iLph1SGbpype9wu86qbujgGSVYLytELNs45dHrIaWTnWwqq11lY7B1lX22X0qcgNZMXDGk5eGzoch7gSi2FJgNb2R9qf6V2tWgkiguVZEb4In2rXtMnfny20PkdrE/zviVeWEGeCkDXnGHwTv0BO0aSpqOLwNcdN6OU5ijmiw=='}
+2022-03-04 02:27:57,313 DEBUG transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'Kate', 'to': 'Julia', 'time': 1646350077.313939, 'mess_text': 'Pa1wzmqUopid6i3ahlZkU9NmbITgO8UzjiRcDCivttQFzRJ46Z82G8xgCDIPzYyJwL/dlhuSDnA+RIqvg8wn+kIP+CwhCQxlKz17NbFC2d5UE2cfJuZyUc0DaUlPdJorwMdFiNAtkV+RD86OZ/dXR8Y6+Oz9B6Aa2i76rFaaDlH15iLph1SGbpype9wu86qbujgGSVYLytELNs45dHrIaWTnWwqq11lY7B1lX22X0qcgNZMXDGk5eGzoch7gSi2FJgNb2R9qf6V2tWgkiguVZEb4In2rXtMnfny20PkdrE/zviVeWEGeCkDXnGHwTv0BO0aSpqOLwNcdN6OU5ijmiw=='}
+2022-03-04 02:27:57,615 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-04 02:27:57,615 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-04 02:27:57,615 INFO transport.py Отправлено сообщение для пользователя Julia
+2022-03-04 02:27:57,615 INFO transport.py Отправлено сообщение для пользователя Julia
+2022-03-04 02:27:57,619 DEBUG main_window.py Отправлено сообщение для Julia: Gff
+2022-03-04 02:27:57,619 DEBUG main_window.py Отправлено сообщение для Julia: Gff
+2022-03-04 02:27:58,407 DEBUG transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'Kate', 'to': 'Julia', 'time': 1646350077.313939, 'mess_text': 'Pa1wzmqUopid6i3ahlZkU9NmbITgO8UzjiRcDCivttQFzRJ46Z82G8xgCDIPzYyJwL/dlhuSDnA+RIqvg8wn+kIP+CwhCQxlKz17NbFC2d5UE2cfJuZyUc0DaUlPdJorwMdFiNAtkV+RD86OZ/dXR8Y6+Oz9B6Aa2i76rFaaDlH15iLph1SGbpype9wu86qbujgGSVYLytELNs45dHrIaWTnWwqq11lY7B1lX22X0qcgNZMXDGk5eGzoch7gSi2FJgNb2R9qf6V2tWgkiguVZEb4In2rXtMnfny20PkdrE/zviVeWEGeCkDXnGHwTv0BO0aSpqOLwNcdN6OU5ijmiw=='}
+2022-03-04 02:27:58,407 DEBUG transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'Kate', 'to': 'Julia', 'time': 1646350077.313939, 'mess_text': 'Pa1wzmqUopid6i3ahlZkU9NmbITgO8UzjiRcDCivttQFzRJ46Z82G8xgCDIPzYyJwL/dlhuSDnA+RIqvg8wn+kIP+CwhCQxlKz17NbFC2d5UE2cfJuZyUc0DaUlPdJorwMdFiNAtkV+RD86OZ/dXR8Y6+Oz9B6Aa2i76rFaaDlH15iLph1SGbpype9wu86qbujgGSVYLytELNs45dHrIaWTnWwqq11lY7B1lX22X0qcgNZMXDGk5eGzoch7gSi2FJgNb2R9qf6V2tWgkiguVZEb4In2rXtMnfny20PkdrE/zviVeWEGeCkDXnGHwTv0BO0aSpqOLwNcdN6OU5ijmiw=='}
+2022-03-04 02:27:58,407 DEBUG transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'Kate', 'to': 'Julia', 'time': 1646350077.313939, 'mess_text': 'Pa1wzmqUopid6i3ahlZkU9NmbITgO8UzjiRcDCivttQFzRJ46Z82G8xgCDIPzYyJwL/dlhuSDnA+RIqvg8wn+kIP+CwhCQxlKz17NbFC2d5UE2cfJuZyUc0DaUlPdJorwMdFiNAtkV+RD86OZ/dXR8Y6+Oz9B6Aa2i76rFaaDlH15iLph1SGbpype9wu86qbujgGSVYLytELNs45dHrIaWTnWwqq11lY7B1lX22X0qcgNZMXDGk5eGzoch7gSi2FJgNb2R9qf6V2tWgkiguVZEb4In2rXtMnfny20PkdrE/zviVeWEGeCkDXnGHwTv0BO0aSpqOLwNcdN6OU5ijmiw=='}
+2022-03-04 02:27:58,407 DEBUG transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'Kate', 'to': 'Julia', 'time': 1646350077.313939, 'mess_text': 'Pa1wzmqUopid6i3ahlZkU9NmbITgO8UzjiRcDCivttQFzRJ46Z82G8xgCDIPzYyJwL/dlhuSDnA+RIqvg8wn+kIP+CwhCQxlKz17NbFC2d5UE2cfJuZyUc0DaUlPdJorwMdFiNAtkV+RD86OZ/dXR8Y6+Oz9B6Aa2i76rFaaDlH15iLph1SGbpype9wu86qbujgGSVYLytELNs45dHrIaWTnWwqq11lY7B1lX22X0qcgNZMXDGk5eGzoch7gSi2FJgNb2R9qf6V2tWgkiguVZEb4In2rXtMnfny20PkdrE/zviVeWEGeCkDXnGHwTv0BO0aSpqOLwNcdN6OU5ijmiw=='}
+2022-03-04 02:27:58,407 DEBUG transport.py Получено сообщение от пользователя Kate:Pa1wzmqUopid6i3ahlZkU9NmbITgO8UzjiRcDCivttQFzRJ46Z82G8xgCDIPzYyJwL/dlhuSDnA+RIqvg8wn+kIP+CwhCQxlKz17NbFC2d5UE2cfJuZyUc0DaUlPdJorwMdFiNAtkV+RD86OZ/dXR8Y6+Oz9B6Aa2i76rFaaDlH15iLph1SGbpype9wu86qbujgGSVYLytELNs45dHrIaWTnWwqq11lY7B1lX22X0qcgNZMXDGk5eGzoch7gSi2FJgNb2R9qf6V2tWgkiguVZEb4In2rXtMnfny20PkdrE/zviVeWEGeCkDXnGHwTv0BO0aSpqOLwNcdN6OU5ijmiw==
+2022-03-04 02:27:58,407 DEBUG transport.py Получено сообщение от пользователя Kate:Pa1wzmqUopid6i3ahlZkU9NmbITgO8UzjiRcDCivttQFzRJ46Z82G8xgCDIPzYyJwL/dlhuSDnA+RIqvg8wn+kIP+CwhCQxlKz17NbFC2d5UE2cfJuZyUc0DaUlPdJorwMdFiNAtkV+RD86OZ/dXR8Y6+Oz9B6Aa2i76rFaaDlH15iLph1SGbpype9wu86qbujgGSVYLytELNs45dHrIaWTnWwqq11lY7B1lX22X0qcgNZMXDGk5eGzoch7gSi2FJgNb2R9qf6V2tWgkiguVZEb4In2rXtMnfny20PkdrE/zviVeWEGeCkDXnGHwTv0BO0aSpqOLwNcdN6OU5ijmiw==
+2022-03-04 02:28:00,082 DEBUG transport.py Создание контакта Kate
+2022-03-04 02:28:00,082 DEBUG transport.py Создание контакта Kate
+2022-03-04 02:28:00,157 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-04 02:28:00,157 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-04 02:28:00,162 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x00000118B43A2430>
+2022-03-04 02:28:00,162 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x00000118B43A2430>
+2022-03-04 02:28:01,205 DEBUG transport.py Запрос публичного ключа для Kate
+2022-03-04 02:28:01,205 DEBUG transport.py Запрос публичного ключа для Kate
+2022-03-04 02:28:01,689 DEBUG main_window.py Загружен открытый ключ для Kate
+2022-03-04 02:28:01,689 DEBUG main_window.py Загружен открытый ключ для Kate
+2022-03-04 02:28:04,977 DEBUG transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'Julia', 'to': 'Kate', 'time': 1646350084.9775832, 'mess_text': 'noPgxwo1mbH6l6U4aSIDSKQn0KemuvmaSgZ6Dedke6RXWHRrdgzFsdd9Il7HesMkxeZav+rX7S1iQ6LEg7mnXWxazb+TNKX7azRwM9ky9A1oIQjAL9vGkxfbFYKIcEw22Q4gaWcmy1g0s5OuxoGUKPOZ+v29iTn+GvbL/lODHJOQ4kDWQZCgIgq/3K4pXrkEw2FuZkbBXwXEdcHz6qaFDySJvWNAgL0Qxp8IllZpgFzIpdrKbp6QzoTOXldx2NspYcg8fh2fqk47wOx5vYecXZISfNJwFJtcAwQp2tzEv2Ssj6r3mG12usaJAOIOc2qkGZijdTzH9g2Ri5czUhVAdw=='}
+2022-03-04 02:28:04,977 DEBUG transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'Julia', 'to': 'Kate', 'time': 1646350084.9775832, 'mess_text': 'noPgxwo1mbH6l6U4aSIDSKQn0KemuvmaSgZ6Dedke6RXWHRrdgzFsdd9Il7HesMkxeZav+rX7S1iQ6LEg7mnXWxazb+TNKX7azRwM9ky9A1oIQjAL9vGkxfbFYKIcEw22Q4gaWcmy1g0s5OuxoGUKPOZ+v29iTn+GvbL/lODHJOQ4kDWQZCgIgq/3K4pXrkEw2FuZkbBXwXEdcHz6qaFDySJvWNAgL0Qxp8IllZpgFzIpdrKbp6QzoTOXldx2NspYcg8fh2fqk47wOx5vYecXZISfNJwFJtcAwQp2tzEv2Ssj6r3mG12usaJAOIOc2qkGZijdTzH9g2Ri5czUhVAdw=='}
+2022-03-04 02:28:05,252 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-04 02:28:05,252 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-04 02:28:05,253 INFO transport.py Отправлено сообщение для пользователя Kate
+2022-03-04 02:28:05,253 INFO transport.py Отправлено сообщение для пользователя Kate
+2022-03-04 02:28:05,255 DEBUG main_window.py Отправлено сообщение для Kate: fgdg
+2022-03-04 02:28:05,255 DEBUG main_window.py Отправлено сообщение для Kate: fgdg
+2022-03-04 02:28:05,654 DEBUG transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'Julia', 'to': 'Kate', 'time': 1646350084.9775832, 'mess_text': 'noPgxwo1mbH6l6U4aSIDSKQn0KemuvmaSgZ6Dedke6RXWHRrdgzFsdd9Il7HesMkxeZav+rX7S1iQ6LEg7mnXWxazb+TNKX7azRwM9ky9A1oIQjAL9vGkxfbFYKIcEw22Q4gaWcmy1g0s5OuxoGUKPOZ+v29iTn+GvbL/lODHJOQ4kDWQZCgIgq/3K4pXrkEw2FuZkbBXwXEdcHz6qaFDySJvWNAgL0Qxp8IllZpgFzIpdrKbp6QzoTOXldx2NspYcg8fh2fqk47wOx5vYecXZISfNJwFJtcAwQp2tzEv2Ssj6r3mG12usaJAOIOc2qkGZijdTzH9g2Ri5czUhVAdw=='}
+2022-03-04 02:28:05,654 DEBUG transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'Julia', 'to': 'Kate', 'time': 1646350084.9775832, 'mess_text': 'noPgxwo1mbH6l6U4aSIDSKQn0KemuvmaSgZ6Dedke6RXWHRrdgzFsdd9Il7HesMkxeZav+rX7S1iQ6LEg7mnXWxazb+TNKX7azRwM9ky9A1oIQjAL9vGkxfbFYKIcEw22Q4gaWcmy1g0s5OuxoGUKPOZ+v29iTn+GvbL/lODHJOQ4kDWQZCgIgq/3K4pXrkEw2FuZkbBXwXEdcHz6qaFDySJvWNAgL0Qxp8IllZpgFzIpdrKbp6QzoTOXldx2NspYcg8fh2fqk47wOx5vYecXZISfNJwFJtcAwQp2tzEv2Ssj6r3mG12usaJAOIOc2qkGZijdTzH9g2Ri5czUhVAdw=='}
+2022-03-04 02:28:05,654 DEBUG transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'Julia', 'to': 'Kate', 'time': 1646350084.9775832, 'mess_text': 'noPgxwo1mbH6l6U4aSIDSKQn0KemuvmaSgZ6Dedke6RXWHRrdgzFsdd9Il7HesMkxeZav+rX7S1iQ6LEg7mnXWxazb+TNKX7azRwM9ky9A1oIQjAL9vGkxfbFYKIcEw22Q4gaWcmy1g0s5OuxoGUKPOZ+v29iTn+GvbL/lODHJOQ4kDWQZCgIgq/3K4pXrkEw2FuZkbBXwXEdcHz6qaFDySJvWNAgL0Qxp8IllZpgFzIpdrKbp6QzoTOXldx2NspYcg8fh2fqk47wOx5vYecXZISfNJwFJtcAwQp2tzEv2Ssj6r3mG12usaJAOIOc2qkGZijdTzH9g2Ri5czUhVAdw=='}
+2022-03-04 02:28:05,654 DEBUG transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'Julia', 'to': 'Kate', 'time': 1646350084.9775832, 'mess_text': 'noPgxwo1mbH6l6U4aSIDSKQn0KemuvmaSgZ6Dedke6RXWHRrdgzFsdd9Il7HesMkxeZav+rX7S1iQ6LEg7mnXWxazb+TNKX7azRwM9ky9A1oIQjAL9vGkxfbFYKIcEw22Q4gaWcmy1g0s5OuxoGUKPOZ+v29iTn+GvbL/lODHJOQ4kDWQZCgIgq/3K4pXrkEw2FuZkbBXwXEdcHz6qaFDySJvWNAgL0Qxp8IllZpgFzIpdrKbp6QzoTOXldx2NspYcg8fh2fqk47wOx5vYecXZISfNJwFJtcAwQp2tzEv2Ssj6r3mG12usaJAOIOc2qkGZijdTzH9g2Ri5czUhVAdw=='}
+2022-03-04 02:28:05,654 DEBUG transport.py Получено сообщение от пользователя Julia:noPgxwo1mbH6l6U4aSIDSKQn0KemuvmaSgZ6Dedke6RXWHRrdgzFsdd9Il7HesMkxeZav+rX7S1iQ6LEg7mnXWxazb+TNKX7azRwM9ky9A1oIQjAL9vGkxfbFYKIcEw22Q4gaWcmy1g0s5OuxoGUKPOZ+v29iTn+GvbL/lODHJOQ4kDWQZCgIgq/3K4pXrkEw2FuZkbBXwXEdcHz6qaFDySJvWNAgL0Qxp8IllZpgFzIpdrKbp6QzoTOXldx2NspYcg8fh2fqk47wOx5vYecXZISfNJwFJtcAwQp2tzEv2Ssj6r3mG12usaJAOIOc2qkGZijdTzH9g2Ri5czUhVAdw==
+2022-03-04 02:28:05,654 DEBUG transport.py Получено сообщение от пользователя Julia:noPgxwo1mbH6l6U4aSIDSKQn0KemuvmaSgZ6Dedke6RXWHRrdgzFsdd9Il7HesMkxeZav+rX7S1iQ6LEg7mnXWxazb+TNKX7azRwM9ky9A1oIQjAL9vGkxfbFYKIcEw22Q4gaWcmy1g0s5OuxoGUKPOZ+v29iTn+GvbL/lODHJOQ4kDWQZCgIgq/3K4pXrkEw2FuZkbBXwXEdcHz6qaFDySJvWNAgL0Qxp8IllZpgFzIpdrKbp6QzoTOXldx2NspYcg8fh2fqk47wOx5vYecXZISfNJwFJtcAwQp2tzEv2Ssj6r3mG12usaJAOIOc2qkGZijdTzH9g2Ri5czUhVAdw==
+2022-03-04 02:28:10,487 DEBUG transport.py Транспорт завершает работу.
+2022-03-04 02:28:10,487 DEBUG transport.py Транспорт завершает работу.
+2022-03-04 02:28:10,745 DEBUG transport.py Транспорт завершает работу.
+2022-03-04 02:28:10,745 DEBUG transport.py Транспорт завершает работу.
+2022-03-04 02:28:11,216 DEBUG transport.py Потеряно соединение с сервером.
+2022-03-04 02:28:11,216 DEBUG transport.py Потеряно соединение с сервером.
