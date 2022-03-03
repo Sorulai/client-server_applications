@@ -1,11 +1,9 @@
 import dis
-from pprint import pprint
 
 
-class ServerMarker(type):
+class ServerMaker(type):
     def __init__(cls, clsname, bases, clsdict):
         methods = []
-        methods_2 = []
         attrs = []
         for func in clsdict:
             try:
@@ -14,23 +12,12 @@ class ServerMarker(type):
                 pass
             else:
                 for i in ret:
-                    print(i)
                     if i.opname == 'LOAD_GLOBAL':
                         if i.argval not in methods:
                             methods.append(i.argval)
-                    elif i.opname == 'LOAD_METHOD':
-                        if i.argval not in methods_2:
-                            methods_2.append(i.argval)
                     elif i.opname == 'LOAD_ATTR':
                         if i.argval not in attrs:
                             attrs.append(i.argval)
-        print(20 * '-', 'methods', 20 * '-')
-        pprint(methods)
-        print(20 * '-', 'methods_2', 20 * '-')
-        pprint(methods_2)
-        print(20 * '-', 'attrs', 20 * '-')
-        pprint(attrs)
-        print(50 * '-')
         if 'connect' in methods:
             raise TypeError('Использование метода connect недопустимо в серверном классе')
         if not ('SOCK_STREAM' in attrs and 'AF_INET' in attrs):
@@ -38,12 +25,14 @@ class ServerMarker(type):
         super().__init__(clsname, bases, clsdict)
 
 
-class ClientMarker(type):
-    def __init__(cls, class_name, class_bases, class_dict):
+class ClientMaker(type):
+    def __init__(cls, clsname, bases, clsdict):
         methods = []
-        for func in class_dict:
+        for func in clsdict:
+            # Пробуем
             try:
-                ret = dis.get_instructions(class_dict[func])
+                ret = dis.get_instructions(clsdict[func])
+                # Если не функция то ловим исключение
             except TypeError:
                 pass
             else:
@@ -58,4 +47,4 @@ class ClientMarker(type):
             pass
         else:
             raise TypeError('Отсутствуют вызовы функций, работающих с сокетами.')
-        super(ClientMarker, cls).__init__(class_name, class_bases, class_dict)
+        super().__init__(clsname, bases, clsdict)

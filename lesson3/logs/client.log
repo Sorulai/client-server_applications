@@ -82,3 +82,58 @@ hello
 2022-02-19 19:07:32,470 INFO       client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
 2022-02-19 19:07:34,491 CRITICAL   client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
 2022-02-19 19:44:51,077 DEBUG      decorators.py Была вызвана функция arg_parser, c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main()
+2022-02-22 19:17:11,553 DEBUG      decorators.py Была вызвана функция arg_parser, c параметрами (), {}.Вызов из модуля __main__.Вызов из функции arg_parser()
+2022-02-22 19:17:18,093 INFO       client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kiara
+2022-02-22 19:17:18,117 INFO       transport.py Попытка подключения №1
+2022-02-22 19:17:18,118 DEBUG      transport.py Установлено соединение с сервером
+2022-02-22 19:17:18,118 DEBUG      transport.py Сформировано presence сообщение для пользователя kiara
+2022-02-22 19:17:18,118 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=1272, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56047), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1645546638.1185641, 'user': {'account_name': 'kiara'}}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_name)
+2022-02-22 19:17:23,131 CRITICAL   transport.py Потеряно соединение с сервером!
+2022-02-22 19:18:09,596 DEBUG      decorators.py Была вызвана функция arg_parser, c параметрами (), {}.Вызов из модуля __main__.Вызов из функции arg_parser()
+2022-02-22 19:18:14,961 INFO       client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: jahe
+2022-02-22 19:18:14,987 INFO       transport.py Попытка подключения №1
+2022-02-22 19:18:14,987 DEBUG      transport.py Установлено соединение с сервером
+2022-02-22 19:18:14,987 DEBUG      transport.py Сформировано presence сообщение для пользователя jahe
+2022-02-22 19:18:14,988 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=1292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56052), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1645546694.9871514, 'user': {'account_name': 'jahe'}}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_name)
+2022-02-22 19:18:14,999 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=1292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56052), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_name)
+2022-02-22 19:18:14,999 DEBUG      transport.py Разбор сообщения от сервера: {'response': 200}
+2022-02-22 19:18:15,000 INFO       transport.py Соединение с сервером успешно установлено.
+2022-02-22 19:18:15,000 DEBUG      transport.py Запрос списка известных пользователей jahe
+2022-02-22 19:18:15,000 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=1292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56052), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1645546695.0007045, 'account_name': 'jahe'}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_name)
+2022-02-22 19:18:15,504 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=1292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56052), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_name)
+2022-02-22 19:18:15,509 DEBUG      transport.py Запрос контакт листа для пользователя Thread-1
+2022-02-22 19:18:15,509 DEBUG      transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1645546695.5096338, 'user': 'jahe'}
+2022-02-22 19:18:15,510 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=1292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56052), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1645546695.5096338, 'user': 'jahe'}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_name)
+2022-02-22 19:18:16,008 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=1292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56052), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_name)
+2022-02-22 19:18:16,009 DEBUG      transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-02-22 19:18:16,009 DEBUG      transport.py Запущен процесс - приёмник сообщений с сервера.
+2022-02-22 19:18:44,170 DEBUG      transport.py Создание контакта test1
+2022-02-22 19:18:44,170 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=1292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56052), raddr=('127.0.0.1', 7777)>, {'action': 'add', 'time': 1645546724.1703818, 'user': 'jahe', 'account_name': 'test1'}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_app.exec_()
+2022-02-22 19:18:44,391 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=1292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56052), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_app.exec_()
+2022-02-22 19:18:44,391 DEBUG      transport.py Разбор сообщения от сервера: {'response': 200}
+2022-02-22 19:18:50,338 DEBUG      transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'jahe', 'to': 'test1', 'time': 1645546730.3381298, 'mess_text': 'Ghbdrtn'}
+2022-02-22 19:18:50,339 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=1292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56052), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'jahe', 'to': 'test1', 'time': 1645546730.3381298, 'mess_text': 'Ghbdrtn'}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_app.exec_()
+2022-02-22 19:18:50,522 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=1292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56052), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_app.exec_()
+2022-02-22 19:18:50,522 DEBUG      transport.py Разбор сообщения от сервера: {'response': 400, 'error': 'Пользователь не зарегистрирован на сервере.'}
+2022-02-22 19:19:38,034 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=1292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56052), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1645546777.8128731, 'account_name': 'jahe'}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции transport.transport_shutdown()
+2022-02-22 19:19:38,034 DEBUG      transport.py Транспорт завершает работу.
+2022-02-22 19:20:12,866 DEBUG      decorators.py Была вызвана функция arg_parser, c параметрами (), {}.Вызов из модуля __main__.Вызов из функции arg_parser()
+2022-02-22 19:20:16,372 INFO       client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: Jane
+2022-02-22 19:20:16,398 INFO       transport.py Попытка подключения №1
+2022-02-22 19:20:16,398 DEBUG      transport.py Установлено соединение с сервером
+2022-02-22 19:20:16,398 DEBUG      transport.py Сформировано presence сообщение для пользователя Jane
+2022-02-22 19:20:16,399 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=1288, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56071), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1645546816.398756, 'user': {'account_name': 'Jane'}}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_name)
+2022-02-22 19:20:16,411 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=1288, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56071), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_name)
+2022-02-22 19:20:16,411 DEBUG      transport.py Разбор сообщения от сервера: {'response': 200}
+2022-02-22 19:20:16,411 INFO       transport.py Соединение с сервером успешно установлено.
+2022-02-22 19:20:16,411 DEBUG      transport.py Запрос списка известных пользователей Jane
+2022-02-22 19:20:16,411 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=1288, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56071), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1645546816.411906, 'account_name': 'Jane'}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_name)
+2022-02-22 19:20:16,924 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=1288, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56071), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_name)
+2022-02-22 19:20:16,928 DEBUG      transport.py Запрос контакт листа для пользователя Thread-1
+2022-02-22 19:20:16,928 DEBUG      transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1645546816.928344, 'user': 'Jane'}
+2022-02-22 19:20:16,928 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=1288, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56071), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1645546816.928344, 'user': 'Jane'}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_name)
+2022-02-22 19:20:17,427 DEBUG      decorators.py Была вызвана функция get_message, c параметрами (<socket.socket fd=1288, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56071), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля lesson3.common.utils.Вызов из функции client_name)
+2022-02-22 19:20:17,427 DEBUG      transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-02-22 19:20:17,427 DEBUG      transport.py Запущен процесс - приёмник сообщений с сервера.
+2022-02-22 19:21:21,107 DEBUG      decorators.py Была вызвана функция send_message, c параметрами (<socket.socket fd=1288, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56071), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1645546880.7503653, 'account_name': 'Jane'}), {}.Вызов из модуля lesson3.common.utils.Вызов из функции transport.transport_shutdown()
+2022-02-22 19:21:21,107 DEBUG      transport.py Транспорт завершает работу.
