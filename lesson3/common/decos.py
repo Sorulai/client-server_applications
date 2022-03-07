@@ -13,6 +13,12 @@ else:
 
 
 def log(func_to_log):
+    '''
+        Декоратор, выполняющий логирование вызовов функций.
+        Сохраняет события типа debug, содержащие
+        информацию о имени вызываемой функиции, параметры с которыми
+        вызывается функция, и модуль, вызывающий функцию.
+        '''
     def log_saver(*args, **kwargs):
         logger.debug(
             f'Была вызвана функция {func_to_log.__name__} c параметрами {args} , {kwargs}. '
@@ -24,6 +30,14 @@ def log(func_to_log):
 
 
 def login_required(func):
+    '''
+      Декоратор, проверяющий, что клиент авторизован на сервере.
+      Проверяет, что передаваемый объект сокета находится в
+      списке авторизованных клиентов.
+      За исключением передачи словаря-запроса
+      на авторизацию. Если клиент не авторизован,
+      генерирует исключение TypeError
+      '''
     def checker(*args, **kwargs):
         from lesson3.server.core import MessageProcessor
         from lesson3.common.variables import ACTION, PRESENCE
