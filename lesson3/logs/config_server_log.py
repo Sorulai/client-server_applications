@@ -1,29 +1,25 @@
-import logging
-import os.path
 import sys
-from lesson3.common.variables import LOGGING_LEVEL
-from logging import handlers
-
 sys.path.append('../')
+import logging
+import logging.handlers
+import os
+from  lesson3.common.variables import LOGGING_LEVEL
 
-SERVER_FORMATTER = logging.Formatter('%(asctime)s %(levelname)-10s %(filename)s %(message)s')
-
-PATH = os.path.dirname(os.path.abspath(__file__))
-PATH = os.path.join(PATH, 'server.log')
-
-STREAM_HANDLER = logging.StreamHandler(sys.stderr)
-STREAM_HANDLER.setFormatter(SERVER_FORMATTER)
-STREAM_HANDLER.setLevel(logging.ERROR)
-LOG_FILE = handlers.TimedRotatingFileHandler(PATH,encoding='utf8', interval=1, when='D')
-LOG_FILE.setFormatter(SERVER_FORMATTER)
-
-LOGGER = logging.getLogger('server')
-LOGGER.addHandler(STREAM_HANDLER)
-LOGGER.addHandler(LOG_FILE)
-LOGGER.setLevel(LOGGING_LEVEL)
+server_formatter = logging.Formatter('%(asctime)s %(levelname)s %(filename)s %(message)s')
+path = os.path.dirname(os.path.abspath(__file__))
+path = os.path.join(path, 'server.log')
+steam = logging.StreamHandler(sys.stderr)
+steam.setFormatter(server_formatter)
+steam.setLevel(logging.INFO)
+log_file = logging.handlers.TimedRotatingFileHandler(path, encoding='utf8', interval=1, when='D')
+log_file.setFormatter(server_formatter)
+logger = logging.getLogger('server_dist')
+logger.addHandler(steam)
+logger.addHandler(log_file)
+logger.setLevel(LOGGING_LEVEL)
 
 if __name__ == '__main__':
-    LOGGER.critical('Критическая ошибка')
-    LOGGER.error('Ошибка')
-    LOGGER.debug('Отладочная информация')
-    LOGGER.info('Информация')
+    logger.critical('Test critical event')
+    logger.error('Test error ivent')
+    logger.debug('Test debug ivent')
+    logger.info('Test info ivent')

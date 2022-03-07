@@ -1,8 +1,9 @@
 import json
+import sys
 
-from lesson3.common.variables import MAX_PACKAGE_LENGTH, ENCODING
-from lesson3.common.decorators import log
-
+sys.path.append('../')
+from  lesson3.common.variables import *
+from  lesson3.common.decos import log
 
 @log
 def get_message(client):
