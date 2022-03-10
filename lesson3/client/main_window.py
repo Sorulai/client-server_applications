@@ -19,6 +19,12 @@ logger = logging.getLogger('client_dist')
 
 
 class ClientMainWindow(QMainWindow):
+    '''
+       Класс - основное окно пользователя.
+       Содержит всю основную логику работы клиентского модуля.
+       Конфигурация окна создана в QTDesigner и загружается из
+       конвертированого файла main_window_conv.py
+       '''
     def __init__(self, database, transport, keys):
         super().__init__()
         self.database = database
@@ -54,6 +60,7 @@ class ClientMainWindow(QMainWindow):
         self.show()
 
     def set_disabled_input(self):
+        ''' Метод делающий поля ввода неактивными'''
 
         self.ui.label_new_message.setText(
             'Для выбора получателя дважды кликните на нем в окне контактов.')
@@ -70,6 +77,10 @@ class ClientMainWindow(QMainWindow):
         self.current_chat_key = None
 
     def history_list_update(self):
+        '''
+                Метод заполняющий соответствующий QListView
+                историей переписки с текущим собеседником.
+                '''
 
         list = sorted(
             self.database.get_history(
@@ -102,10 +113,12 @@ class ClientMainWindow(QMainWindow):
         self.ui.list_messages.scrollToBottom()
 
     def select_active_user(self):
+        '''Метод обработчик события двойного клика по списку контактов.'''
         self.current_chat = self.ui.list_contacts.currentIndex().data()
         self.set_active_user()
 
     def set_active_user(self):
+        '''Метод активации чата с собеседником.'''
         try:
             self.current_chat_key = self.transport.key_request(
                 self.current_chat)
@@ -132,6 +145,7 @@ class ClientMainWindow(QMainWindow):
         self.history_list_update()
 
     def clients_list_update(self):
+        '''Метод обновляющий список контактов.'''
         contacts_list = self.database.get_contacts()
         self.contacts_model = QStandardItemModel()
         for i in sorted(contacts_list):
@@ -141,6 +155,7 @@ class ClientMainWindow(QMainWindow):
         self.ui.list_contacts.setModel(self.contacts_model)
 
     def add_contact_window(self):
+        '''Метод создающий окно - диалог добавления контакта'''
         global select_dialog
         select_dialog = AddContactDialog(self.transport, self.database)
         select_dialog.btn_ok.clicked.connect(
@@ -148,11 +163,16 @@ class ClientMainWindow(QMainWindow):
         select_dialog.show()
 
     def add_contact_action(self, item):
+        '''Метод обработчк нажатия кнопки "Добавить"'''
         new_contact = item.selector.currentText()
         self.add_contact(new_contact)
         item.close()
 
     def add_contact(self, new_contact):
+        '''
+                Метод добавляющий контакт в серверную и клиентсткую BD.
+                После обновления баз данных обновляет и содержимое окна.
+                '''
         try:
             self.transport.add_contact(new_contact)
         except ServerError as err:
@@ -173,6 +193,7 @@ class ClientMainWindow(QMainWindow):
                 self, 'Успех', 'Контакт успешно добавлен.')
 
     def delete_contact_window(self):
+        '''Метод создающий окно удаления контакта.'''
         global remove_dialog
         remove_dialog = DelContactDialog(self.database)
         remove_dialog.btn_ok.clicked.connect(
@@ -180,6 +201,10 @@ class ClientMainWindow(QMainWindow):
         remove_dialog.show()
 
     def delete_contact(self, item):
+        '''
+                Метод удаляющий контакт из серверной и клиентсткой BD.
+                После обновления баз данных обновляет и содержимое окна.
+                '''
         selected = item.selector.currentText()
         try:
             self.transport.remove_contact(selected)
@@ -203,6 +228,10 @@ class ClientMainWindow(QMainWindow):
                 self.set_disabled_input()
 
     def send_message(self):
+        '''
+                Функция отправки сообщения текущему собеседнику.
+                Реализует шифрование сообщения и его отправку.
+                '''
         message_text = self.ui.text_message.toPlainText()
         self.ui.text_message.clear()
         if not message_text:
@@ -236,6 +265,12 @@ class ClientMainWindow(QMainWindow):
 
     @pyqtSlot(dict)
     def message(self, message):
+        '''
+               Слот обработчик поступаемых сообщений, выполняет дешифровку
+               поступаемых сообщений и их сохранение в истории сообщений.
+               Запрашивает пользователя если пришло сообщение не от текущего
+               собеседника. При необходимости меняет собеседника.
+               '''
         encrypted_message = base64.b64decode(message[MESSAGE_TEXT])
         try:
             decrypted_message = self.decrypter.decrypt(encrypted_message)
@@ -277,6 +312,10 @@ class ClientMainWindow(QMainWindow):
 
     @pyqtSlot()
     def connection_lost(self):
+        '''
+               Слот обработчик потери соеднинения с сервером.
+               Выдаёт окно предупреждение и завершает работу приложения.
+               '''
         self.messages.warning(
             self,
             'Сбой соединения',
@@ -285,6 +324,9 @@ class ClientMainWindow(QMainWindow):
 
     @pyqtSlot()
     def sig_205(self):
+        '''
+               Слот выполняющий обновление баз данных по команде сервера.
+               '''
         if self.current_chat and not self.database.check_user(
                 self.current_chat):
             self.messages.warning(
